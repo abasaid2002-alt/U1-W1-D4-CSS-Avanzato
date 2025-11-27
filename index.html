@@ -15,6 +15,11 @@
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
 
+    <!-- Google Fonts: Poppins -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet" />
+
     <!-- Stili personalizzati -->
     <link rel="stylesheet" href="./assets/css/style.css" />
   </head>
@@ -37,8 +42,8 @@
     </header>
 
     <!-- CONTENUTO PRINCIPALE -->
-    <main>
-      <div class="content-box">
+    <div class="content-box">
+      <main>
         <article class="post">
           <header class="post-header">
             <h2>Come creare un template per i post</h2>
@@ -61,7 +66,10 @@
 
           <h3>Formattazione del codice</h3>
 
-          <p>Il testo dell'articolo dovrà essere formattato per identificare tutte le parti da selezionare con i CSS. Perciò i passi saranno:</p>
+          <p>
+            Il testo dell'articolo dovrà essere formattato per identificare tutte le parti da <span style="color: blueviolet">selezionare con i CSS</span>.
+            Perciò i passi saranno:
+          </p>
 
           <ol>
             <li>Progettare il markup assegnando ad ogni specifico tag appropriato</li>
@@ -71,7 +79,7 @@
 
           <table>
             <caption>
-              <strong>Diffusione dei CSS</strong>
+              <p style="font-style: italic">Diffusione dei CSS</p>
             </caption>
             <thead>
               <tr>
@@ -120,7 +128,8 @@
           </section>
 
           <section class="newsletter">
-            <h4 class="newsletter-title">Vuoi rimanere aggiornato su altre novità del blog? Iscriviti alla nostra newsletter:</h4>
+            <h4 class="newsletter-title">Novità</h4>
+            <p>Vuoi rimanere aggiornato su altre novità del blog? Iscriviti alla nostra newsletter:</p>
             <form>
               <input type="email" placeholder="epicode@gmail.com" required />
               <button type="submit"><i class="fas fa-paper-plane"></i> Iscriviti</button>
@@ -132,38 +141,38 @@
           <h3>Articoli correlati</h3>
 
           <article class="related-card">
-            <h4>Validare il codice HTML</h4>
+            <a href="#">Validare il codice HTML</a>
             <p>Categoria: develop</p>
-            <p>Data: 18-9-2020</p>
+            <p style="text-align: right">Data: 18-9-2020</p>
           </article>
 
           <article class="related-card">
-            <h4>Correggere la sintassi</h4>
+            <a href="#">Correggere la sintassi</a>
             <p>Categoria: develop</p>
-            <p>Data: 16-9-2020</p>
+            <p style="text-align: right">Data: 16-9-2020</p>
           </article>
 
           <article class="related-card">
-            <h4>Meno Kb nella pagina</h4>
+            <a href="#">Meno Kb nella pagina</a>
             <p>Categoria: ottimizzazione</p>
-            <p>Data: 30-9-2020</p>
+            <p style="text-align: right">Data: 30-9-2020</p>
           </article>
         </section>
+      </main>
+    </div>
 
-        <footer class="site-footer">
-          <p>Blog Epicode ©2023</p>
+    <footer class="site-footer">
+      <p>Blog Epicode ©2023</p>
 
-          <p>
-            Testata online di Mario Rossi, registrata con prot. n.213/2018 -
-            <a href="https://maps.app.goo.gl/wdfaneqkn6tYiegZ9" target="_blank">via Luigi Einaudi 2</a>
-            - Milano. P.IVA 00112233.
-          </p>
-          <p>
-            Per contattarci scrivi a
-            <a href="mailto:epicode@gmail.com">epicode@gmail.com</a>
-          </p>
-        </footer>
-      </div>
-    </main>
+      <p>
+        Testata online di Mario Rossi, registrata con prot. n.213/2018 -
+        <a href="https://maps.app.goo.gl/wdfaneqkn6tYiegZ9" target="_blank">via Luigi Einaudi 2</a>
+        - Milano. P.IVA 00112233.
+      </p>
+      <p>
+        Per contattarci scrivi a
+        <a href="mailto:epicode@gmail.com">epicode@gmail.com</a>
+      </p>
+    </footer>
   </body>
 </html>

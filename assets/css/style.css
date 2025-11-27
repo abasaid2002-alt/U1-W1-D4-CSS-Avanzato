@@ -1,0 +1,277 @@
+/* ========== BASE ========== */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  overflow-x: hidden; 
+  font-family: "Poppins", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  background-image: url("../img/sfondo.png");
+  background-size: auto;
+  background-position: center top;
+  background-attachment: fixed;
+}
+
+
+.hero-box,
+.content-box {
+  max-width: 350px; 
+  width: 100%;
+  margin: 16px auto 0;
+}
+
+/* ========== HEADER / HERO ========== */
+
+.hero-box {
+  background: linear-gradient(135deg, #0cc3d8, #f54f7f);
+  color: #ffffff;
+  text-align: center;
+  padding: 24px 16px;
+}
+
+.hero-box img {
+  display: block;
+  margin: 0 auto 12px;
+}
+
+.blog-subtitle {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  margin-bottom: 16px;
+}
+
+/* menu */
+
+.main-nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.main-nav li {
+  font-size: 0.75rem;
+  margin: 4px 0;
+}
+
+/* ========== CONTENUTO PRINCIPALE ========== */
+
+main {
+  width: 100%;
+}
+
+.content-box {
+  background-color: #ffffff;
+  padding: 18px 16px 24px;
+  margin-bottom: 24px;
+}
+
+/* header dell'articolo */
+
+.post-header h2 {
+  font-size: 1.15rem;
+  line-height: 1.3;
+  margin-bottom: 6px;
+}
+
+.post-meta {
+  font-size: 0.7rem;
+  color: #999;
+  margin-bottom: 14px;
+}
+
+.post-meta .autore::before {
+  content: "👤 ";
+}
+
+.post-meta .data::before {
+  content: " • ";
+  margin: 0 3px;
+}
+
+/* testo */
+
+.post p {
+  font-size: 0.75rem;
+  line-height: 1.6;
+  margin-bottom: 10px;
+}
+
+.post h3 {
+  font-size: 0.85rem;
+  margin: 14px 0 8px;
+}
+
+.post ul {
+  padding-left: 18px;
+  margin: 6px 0 10px;
+  list-style: disc;
+}
+.post ol {
+  padding-left: 18px;
+  margin: 6px 0 10px;
+  list-style: auto;
+}
+
+.post li {
+  font-size: 0.75rem;
+  line-height: 1.4;
+  margin-bottom: 4px;
+}
+
+/* link nel testo */
+
+.post a {
+  color: #1a8fdc;
+  text-decoration: underline;
+}
+
+/* ========== TABELLA ========== */
+
+.post table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.7rem;
+  margin: 16px 0;
+  text-align: center;
+}
+
+.post caption {
+  margin-bottom: 6px;
+  font-size: 0.8rem;
+}
+
+.post th,
+.post td {
+  border: 1px solid #e0e0e0;
+  padding: 4px 0;
+}
+
+.post thead {
+  background-color: #4fa3d8;
+  color: #ffffff;
+}
+
+.post tbody tr:nth-child(odd) {
+  background-color: #f5f5f5;
+}
+
+/* ========== VIDEO ========== */
+
+.post-video {
+  margin: 12px 0 18px;
+  background-color: #f15a8b;
+  padding: 10px;
+}
+
+.post-video iframe {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  border: none;
+  display: block;
+}
+
+/* ========== NEWSLETTER ("NOVITÀ") ========== */
+
+.newsletter {
+  margin-top: 4px;
+  background-color: #f1f1f1;
+  padding: 14px 10px 16px;
+}
+
+.newsletter-title {
+  font-size: 0.75rem;
+  margin-bottom: 10px;
+  text-align: center;
+  font-size: larger;
+}
+
+.newsletter form {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.newsletter input[type="email"] {
+  padding: 6px 8px;
+  font-size: 0.75rem;
+  border: 1px solid #ccc;
+}
+
+.newsletter button {
+  border: none;
+  padding: 6px 8px;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  cursor: pointer;
+  background-color: #4410c0;
+  color: #ffffff;
+}
+
+.newsletter button i {
+  margin-right: 4px;
+}
+
+/* ========== ARTICOLI CORRELATI ========== */
+
+.related-articles {
+  margin-top: 18px;
+}
+
+.related-articles h3 {
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.related-card {
+  background-color: #f5f5f5;
+  padding: 10px 8px;
+  margin-bottom: 8px;
+  font-size: 0.7rem;
+}
+.related-card p {
+  margin: 12px;
+}
+
+.related-card h4 {
+  font-size: 0.8rem;
+  margin-bottom: 4px;
+}
+
+/* ========== FOOTER INTERNO ========== */
+
+.site-footer {
+  background-color: #0f273a;
+  color: #ffffff;
+  text-align: center;
+  padding: 16px 10px 20px;
+  font-size: 0.65rem;
+  max-width: 350px;
+  width: 100%;
+  margin: auto;
+  margin-bottom: 16px;
+}
+
+.site-footer a {
+  color: #ffffff;
+  text-decoration: underline;
+}
+.site-footer p {
+  margin: 6px;
+}
+
+img,
+iframe {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
